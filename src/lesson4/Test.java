@@ -11,5 +11,7 @@ public class Test {
         list.add(2);
         list.add(3);
         System.out.println(list.toString());
+        System.out.println(list.get(2));
+        System.out.println(list.get(100));
     }
 }

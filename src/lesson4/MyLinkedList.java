@@ -19,6 +19,23 @@ public class MyLinkedList {
         size++;
     }
 
+    public int get(int index) {
+        int currentIndex = 0;
+        Node temp = head;
+        while(temp != null) {
+            if(currentIndex == index) {
+                return temp.getValue();
+            } else {
+                temp = temp.getNext();
+                currentIndex++;
+            }
+        }
+
+        // 1 - 2 - 3
+
+        throw new IllegalArgumentException();
+    }
+
     public String toString() {
         int[] result = new int[size];
         int index = 0;
